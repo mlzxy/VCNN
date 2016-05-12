@@ -86,3 +86,8 @@
 !*.xmp
 !*.app
 !*.pdf
+!.project
+!.cproject
+!README.md
+!.settings/*
+!.apc/*
