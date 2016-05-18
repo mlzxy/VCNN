@@ -2,6 +2,17 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="VCNN.h" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/VCNN.h"/>
+    <originFiles name="convolution.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/convolution.cpp"/>
+    <originFiles name="layers.h" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/layers.h"/>
+    <originFiles name="pooling.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/pooling.cpp"/>
+    <originFiles name="caffe_model_layer.h" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/caffe_model_layer.h"/>
+    <originFiles name="relu.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/relu.cpp"/>
+    <originFiles name="inner_product.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/inner_product.cpp"/>
+    <originFiles name="Softmax.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/Softmax.cpp"/>
+    <originFiles name="return_callback.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/return_callback.cpp"/>
+    <originFiles name="custom.h" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/custom.h"/>
+    <originFiles name="main.cpp" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/main.cpp"/>
+    <originFiles name="util.h" path="/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/util.h"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -42,9 +42,64 @@
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/development/.tcls</location>
 		</link>
 		<link>
+			<name>source/Softmax.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/Softmax.cpp</location>
+		</link>
+		<link>
 			<name>source/VCNN.h</name>
 			<type>1</type>
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/VCNN.h</location>
+		</link>
+		<link>
+			<name>source/caffe_model_layer.h</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/caffe_model_layer.h</location>
+		</link>
+		<link>
+			<name>source/convolution.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/convolution.cpp</location>
+		</link>
+		<link>
+			<name>source/custom.h</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/custom.h</location>
+		</link>
+		<link>
+			<name>source/inner_product.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/inner_product.cpp</location>
+		</link>
+		<link>
+			<name>source/layers.h</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/layers.h</location>
+		</link>
+		<link>
+			<name>source/main.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/main.cpp</location>
+		</link>
+		<link>
+			<name>source/pooling.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/pooling.cpp</location>
+		</link>
+		<link>
+			<name>source/relu.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/relu.cpp</location>
+		</link>
+		<link>
+			<name>source/return_callback.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/return_callback.cpp</location>
+		</link>
+		<link>
+			<name>source/util.h</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/util.h</location>
 		</link>
 		<link>
 			<name>development/constraints/.xml.directive</name>

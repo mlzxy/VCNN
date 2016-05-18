@@ -86,6 +86,9 @@
 !*.xmp
 !*.app
 !*.pdf
+!*.c
+!*.h
+!*.cpp
 !.project
 !.cproject
 !README.md

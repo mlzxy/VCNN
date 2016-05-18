@@ -1,4 +1,10 @@
-typedef enum {CONVOLUTION,POOLING_AVG,POOLING_MAX,RELU,INNERPRODUCT,SOFTMAX} LayerType;
+typedef enum {
+	CONVOLUTION,
+	POOLING_AVG,
+	POOLING_MAX,
+	RELU,
+	INNERPRODUCT,
+	SOFTMAX} LayerType;
 
 typedef  struct {
     int id;
@@ -16,6 +22,7 @@ typedef  struct {
     int conv_filter_size;
     int conv_filter_num;
     int conv_stride;
+    int conv_pad;
 
 
     /*for pooling layer*/
@@ -25,6 +32,18 @@ typedef  struct {
     /*for inner product layer*/
     int ip_channel_num;
     int ip_output_num;
+
+    //for every layer
+    int input_channel_num;
+    int input_feature_map_height;
+    int input_feature_map_width;
+
+//    int output_channel_num;
+//    int output_feature_map_height;
+//    int output_feature_map_width;
+
+    float* input_data;
+
 } Layer;
 
 
@@ -48,90 +67,107 @@ typedef struct {
 static int const nChannels = 3;
 static int const imgWidth = 32;
 static int const imgHeight = 32;
-Layer  layers[12] = {
-{
-                .id = 0,
-            .type=CONVOLUTION,
-            .conv_filter_channels=3,
-            .conv_filter_size=5,
-            .conv_filter_num=32,
-            .conv_stride=1
-            
-            }
-,
-{
-                .id = 1,
-            .type=POOLING_AVG,
-            .pl_kernel_size=2,
-            .pl_stride=3
-            
-            }
-,
-{
-                .id = 2,.type=RELU
-            }
-,
-{
-                .id = 3,
-            .type=CONVOLUTION,
-            .conv_filter_channels=32,
-            .conv_filter_size=5,
-            .conv_filter_num=32,
-            .conv_stride=1
-            
-            }
-,
-{
-                .id = 4,.type=RELU
-            }
-,
-{
-                .id = 5,
-            .type=POOLING_AVG,
-            .pl_kernel_size=2,
-            .pl_stride=3
-            
-            }
-,
-{
-                .id = 6,
-            .type=CONVOLUTION,
-            .conv_filter_channels=32,
-            .conv_filter_size=5,
-            .conv_filter_num=64,
-            .conv_stride=1
-            
-            }
-,
-{
-                .id = 7,.type=RELU
-            }
-,
-{
-                .id = 8,
-            .type=POOLING_AVG,
-            .pl_kernel_size=2,
-            .pl_stride=3
-            
-            }
-,
-{
-                .id = 9,
-            .type=INNERPRODUCT,
-            .ip_channel_num=1024,
-            .ip_output_num=64
-            
-            }
-,
-{
-                .id = 10,
-            .type=INNERPRODUCT,
-            .ip_channel_num=64,
-            .ip_output_num=10
-            
-            }
-,
-{
-                .id = 11,.type=SOFTMAX
-            }
+
+static int const nLayers = 13;
+static int const nLayerTypes = 7;
+
+
+typedef  float Image_f[nChannels][imgHeight][imgWidth];
+typedef  int   Image_i[nChannels][imgHeight][imgWidth];
+
+#define MEAN_IMAGE_TYPE Image_f
+#define INPUT_IMAGE_TYPE Image_i
+
+Layer layers[12] = {
+		{
+				0
+		}
 };
+
+//Layer  layers[12] = {
+//		{
+//                .id = 0,
+//            .type=CONVOLUTION,
+//            .conv_filter_channels=3,
+//            .conv_filter_size=5,
+//            .conv_filter_num=32,
+//            .conv_stride=1
+//
+//            }
+//,
+//{
+//                .id = 1,
+//            .type=POOLING_AVG,
+//            .pl_kernel_size=2,
+//            .pl_stride=3
+//
+//            }
+//,
+//{
+//                .id = 2,.type=RELU
+//            }
+//,
+//{
+//                .id = 3,
+//            .type=CONVOLUTION,
+//            .conv_filter_channels=32,
+//            .conv_filter_size=5,
+//            .conv_filter_num=32,
+//            .conv_stride=1
+//
+//            }
+//,
+//{
+//                .id = 4,.type=RELU
+//            }
+//,
+//{
+//                .id = 5,
+//            .type=POOLING_AVG,
+//            .pl_kernel_size=2,
+//            .pl_stride=3
+//
+//            }
+//,
+//{
+//                .id = 6,
+//            .type=CONVOLUTION,
+//            .conv_filter_channels=32,
+//            .conv_filter_size=5,
+//            .conv_filter_num=64,
+//            .conv_stride=1
+//
+//            }
+//,
+//{
+//                .id = 7,.type=RELU
+//            }
+//,
+//{
+//                .id = 8,
+//            .type=POOLING_AVG,
+//            .pl_kernel_size=2,
+//            .pl_stride=3
+//
+//            }
+//,
+//{
+//                .id = 9,
+//            .type=INNERPRODUCT,
+//            .ip_channel_num=1024,
+//            .ip_output_num=64
+//
+//            }
+//,
+//{
+//                .id = 10,
+//            .type=INNERPRODUCT,
+//            .ip_channel_num=64,
+//            .ip_output_num=10
+//
+//            }
+//,
+//{
+//                .id = 11,.type=SOFTMAX
+//            }
+//};
