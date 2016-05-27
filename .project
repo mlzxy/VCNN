@@ -37,9 +37,9 @@
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/.apc/.tb</location>
 		</link>
 		<link>
-			<name>development/constraints</name>
+			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/development/.tcls</location>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/Softmax.cpp</name>
@@ -52,6 +52,11 @@
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/VCNN.h</location>
 		</link>
 		<link>
+			<name>source/caffe_model_layer.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/caffe_model_layer.cpp</location>
+		</link>
+		<link>
 			<name>source/caffe_model_layer.h</name>
 			<type>1</type>
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/caffe_model_layer.h</location>
@@ -60,6 +65,11 @@
 			<name>source/convolution.cpp</name>
 			<type>1</type>
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/layers/convolution.cpp</location>
+		</link>
+		<link>
+			<name>source/custom.cpp</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/custom.cpp</location>
 		</link>
 		<link>
 			<name>source/custom.h</name>
@@ -102,19 +112,29 @@
 			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/lib/util.h</location>
 		</link>
 		<link>
-			<name>development/constraints/.xml.directive</name>
+			<name>testbench/mnist_data.h</name>
 			<type>1</type>
-			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/development/development.directive</location>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/mnist/mnist_data.h</location>
 		</link>
 		<link>
-			<name>development/constraints/directives.tcl</name>
+			<name>testbench/test.cpp</name>
 			<type>1</type>
-			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/development/directives.tcl</location>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/src/custom/test.cpp</location>
 		</link>
 		<link>
-			<name>development/constraints/script.tcl</name>
+			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/development/script.tcl</location>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/solution1.directive</location>
+		</link>
+		<link>
+			<name>solution1/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution1/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

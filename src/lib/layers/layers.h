@@ -1,5 +1,5 @@
-#ifndef __CONVOLUTION_SOBEL_H__
-#define __CONVOLUTION_SOBEL_H__
+#ifndef VCNN_LAYERS_H
+#define VCNN_LAYERS_H
 
 #include "../../custom/caffe_model_layer.h"
 
@@ -21,7 +21,7 @@ void ReturnCallback(Layer current, LayerWeight cw, Layer next);
 
 //you don't need mean image here, just substract them in the main
 // function
-Layer_f layer_dict[nLayerTypes] = {
+static Layer_f layer_dict[nLayerTypes] = {
 		Convolution,
 		PoolingAvg,
 		PoolingMax,

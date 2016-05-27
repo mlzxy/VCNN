@@ -1,6 +1,7 @@
 #include "layers.h"
-#include "../../util.h"
+#include "../util.h"
 #include <math.h>
+
 
 void Softmax(Layer current, LayerWeight cw, Layer next){
 	float exp_sum = 0.0;

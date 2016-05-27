@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="make: Warning: File '../../../src/custom/caffe_model_layer.h' has modification time 28 s in the future&#xA;make: warning:  Clock skew detected.  Your build may be incomplete." projectName="VCNN" solutionName="solution1" date="2016-05-27T14:57:25.908-0700" type="Warning"/>
+        <logs message="make: Warning: File '../../../src/custom/caffe_model_layer.h' has modification time 116 s in the future&#xA;make: warning:  Clock skew detected.  Your build may be incomplete." projectName="VCNN" solutionName="solution1" date="2016-05-27T14:55:57.230-0700" type="Warning"/>
+        <logs message="make: Warning: File '../../../src/custom/caffe_model_layer.h' has modification time 434 s in the future&#xA;make: warning:  Clock skew detected.  Your build may be incomplete." projectName="VCNN" solutionName="solution1" date="2016-05-27T14:50:39.939-0700" type="Warning"/>
+        <logs message="make: Warning: File '../../../src/custom/caffe_model_layer.cpp' has modification time 503 s in the future&#xA;make: warning:  Clock skew detected.  Your build may be incomplete." projectName="VCNN" solutionName="solution1" date="2016-05-27T14:49:30.596-0700" type="Warning"/>
+        <logs message="make: Warning: File '../../../src/custom/caffe_model_layer.cpp' has modification time 510 s in the future&#xA;make: warning:  Clock skew detected.  Your build may be incomplete." projectName="VCNN" solutionName="solution1" date="2016-05-27T14:49:23.075-0700" type="Warning"/>
+        <logs message="make: Warning: File '../../../src/custom/caffe_model_layer.h' has modification time 562 s in the future&#xA;make: warning:  Clock skew detected.  Your build may be incomplete." projectName="VCNN" solutionName="solution1" date="2016-05-27T14:48:31.861-0700" type="Warning"/>
+        <logs message="CRITICAL WARNING: [SIM 211-1] CSim file generation failed: compilation error(s).&#xA;5&#xA;    while executing&#xA;&quot;source /home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="VCNN" solutionName="solution1" date="2016-05-27T14:44:44.423-0700" type="Warning"/>
+        <logs message="CRITICAL WARNING: [SIM 211-1] CSim file generation failed: compilation error(s).&#xA;5&#xA;    while executing&#xA;&quot;source /home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="VCNN" solutionName="solution1" date="2016-05-27T14:44:30.426-0700" type="Warning"/>
+        <logs message="CRITICAL WARNING: [SIM 211-1] CSim file generation failed: compilation error(s).&#xA;5&#xA;    while executing&#xA;&quot;source /home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/xy0/Workspace/vivado_hls/VCNN/VCNN/solution1/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="VCNN" solutionName="solution1" date="2016-05-27T10:33:29.036-0700" type="Warning"/>
+        <logs message="make: Warning: File '../../../src/custom/test.cpp' has modification time 459 s in the future&#xA;../../../src/custom/test.cpp: In function ‘int main()’:&#xA;../../../src/custom/test.cpp:15:19: error: cannot convert ‘int (*)[28][28]’ to ‘int***’ in initialization&#xA;../../../src/custom/test.cpp:23:55: error: cannot convert ‘int***’ to ‘int (*)[28][28]’ for argument ‘3’ to ‘void neural_net(LayerWeight*, float (*)[28][28], int (*)[28][28], float*)’&#xA;make: *** [obj/test.o] Error 1" projectName="VCNN" solutionName="solution1" date="2016-05-27T10:33:29.026-0700" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -29,6 +29,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="/home/xy0/Workspace/vivado_hls/VCNN"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1654749681" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
@@ -46,6 +47,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="/home/xy0/Workspace/vivado_hls/VCNN"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1198141585" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
@@ -79,7 +81,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="development|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -113,6 +115,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="/home/xy0/Workspace/vivado_hls/VCNN"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.586029565" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -125,6 +128,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include/ap_sysc"/>
+									<listOptionValue builtIn="false" value="/home/xy0/Workspace/vivado_hls/VCNN"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.1/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1423827337" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
@@ -153,7 +157,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="development|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

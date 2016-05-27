@@ -1,5 +1,5 @@
 #include "layers.h"
-#include "../../util.h"
+#include "../util.h"
 
 
 inline float avg(Layer current, int ksize, int channel, int h, int w){

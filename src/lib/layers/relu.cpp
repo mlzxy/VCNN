@@ -1,5 +1,5 @@
 #include "layers.h"
-#include "../../util.h"
+#include "../util.h"
 
 void Relu(Layer current, LayerWeight cw, Layer next) {
 
