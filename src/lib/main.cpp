@@ -14,10 +14,13 @@ void neural_net(LayerWeight layer_weights[nLayers], MEAN_IMAGE_TYPE mean_image[n
 	//subtract the input image by mean_image
 	for(int i = 0; i<nChannels; i++)
 		for(int j = 0; j<imgHeight; j++)
-			for(int k = 0; k<imgWidth; k++)
-				GET_INPUT_DATA(layers[0], i,j,k) =input_image[i][j][k] - mean_image[i][j][k];
-
-
+			for(int k = 0; k<imgWidth; k++){
+				float temp =  (input_image[i][j][k] - mean_image[i][j][k]) * dataScale;
+				GET_INPUT_DATA(layers[0], i,j,k) = temp;
+//				printf("input_image<%d,%d,%d> = %d, transformed = %f\n", i, j, k
+//						, input_image[i][j][k], temp);
+//				printf("%f, %f\n", GET_INPUT_DATA(layers[0], i,j,k) ,temp);
+			}
 	for(int i = 0;i<nLayers;i++){
 		layer_dict[layers[i].type](layers[i], layer_weights[i], layers[i+1]);
 	}
