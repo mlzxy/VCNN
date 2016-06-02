@@ -36,7 +36,7 @@ int main(){
 				max_val = result[c];
 				max_idx = c;
 			}
-//		printf("the corrected label = %d; the detected label = %d;\n", labels[i], max_idx);
+		printf("the corrected label = %d; the detected label = %d;\n", labels[i], max_idx);
 		if(labels[i] == max_idx){
 			corrected_number++;
 		}
@@ -45,9 +45,9 @@ int main(){
 	float rate = (float)corrected_number/MNIST_TEST_NUM;
 	printf("Detection Rate is %.2f%%\n", rate*100);
 	if (rate > 0.9)
-		printf("Neural Network is Working :)");
+		printf("Neural Network is Working :)\n");
 	else
-		printf("Neural Network is not working :(");
+		printf("Neural Network is not working :(\n");
 	return 0;
 }
 

@@ -1,6 +1,6 @@
 #ifndef CAFFE_LAYER_DEF_H
 #define CAFFE_LAYER_DEF_H
-static int const nLayers = 4;
+static int const nLayers = 9;
 static float const dataScale= 0.00390625;
 static int const nOutput = 10;
 typedef enum {CONVOLUTION,POOLING_AVG,POOLING_MAX,RELU,INNERPRODUCT,SOFTMAX,RETURN_CALLBACK} LayerType;
@@ -67,6 +67,6 @@ extern float mean_image[1][28][28];
 #define MEAN_IMAGE_TYPE float
 #define INPUT_IMAGE_TYPE  int
     
-extern LayerWeight  layers_weight[4];
-extern Layer  layers[5];
+extern LayerWeight  layers_weight[9];
+extern Layer  layers[10];
 #endif /* CAFFE_LAYER_DEF_H */
