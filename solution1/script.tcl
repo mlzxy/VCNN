@@ -22,7 +22,7 @@ add_files VCNN/src/lib/util.h
 add_files -tb VCNN/src/custom/mnist/mnist_data.h
 add_files -tb VCNN/src/custom/test.cpp
 open_solution "solution1"
-set_part {xq7z030rf676-1q} -tool vivado
+set_part {xc7z020clg484-1}
 create_clock -period 10 -name default
 set_clock_uncertainty 2
 #source "./VCNN/solution1/directives.tcl"

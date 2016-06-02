@@ -26,3 +26,15 @@ void neural_net(LayerWeight layer_weights[nLayers], MEAN_IMAGE_TYPE mean_image[n
 
 }
 
+/*
+ * Unsynthesiable problem
+ *
+ * 1. Your top level function contains a port that is a pointer to the MODEL struct which has itself pointers (even double pointers).
+
+ * 2. unsupported type conversion: ENUM=>INT
+ *
+ * 3. Unsupport memory access, compiler is not able to know the size of layers.input_data.
+ *
+ * 4. Function Pointer is not support
+ * */
+
