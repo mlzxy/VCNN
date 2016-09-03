@@ -1,14 +1,15 @@
 # Vivado HLS Convolution Neural Network Framework #
 
-> Has Synthesis Problem because of the use of
+> Proof of concept, has synthesis problem because of
 > - pointer inside struct
-> - function pointer. 
->
-> But it's a proof of concept. 
+> - function pointer
 
 
 A convolutional neural network framework implemented in Vivado HLS C, support to translate simple caffe model into C and run in FPGA. 
 
+
+![](screenshot.png)
+[[demo video](https://www.youtube.com/watch?v=YNWhBHvy6JI)]
 
 ## Usage
 
