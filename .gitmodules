@@ -1,3 +1,4 @@
 [submodule "caffe-convertor"]
 	path = caffe-convertor
-	url = https://bitbucket.org/xyz0/vcnn-caffe-convertor
+	url = https://github.com/BenBBear/vcnn-caffe-convertor
+
