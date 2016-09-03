@@ -1,14 +1,21 @@
-# CSE291 Final Project #
+# Vivado HLS Convolution Neural Network Framework #
 
-Xinyu Zhang: A53095838
-
-
-The final proposal is [here](https://bitbucket.org/xyz0/cse291_fpga_cv_final_project/raw/e48ee0cbc8ad6b3cb228b393b28d1f3fb2ef80b9/Final_Proposal.pdf).
-
-
-I plan to implement a convolutional neural network here, that could use pretrained caffe model. 
+> Has Synthesis Problem because of the use of
+> - pointer inside struct
+> - function pointer. 
+>
+> But it's a proof of concept. 
 
 
-## Current Status
+A convolutional neural network framework implemented in Vivado HLS C, support to translate simple caffe model into C and run in FPGA. 
 
-- Caffe Convertor Finished (Could translate *.caffemodel to a c-header file)
+
+## Usage
+
+1. Translate a model: [How to translate a trained caffe model link](https://github.com/BenBBear/vcnn-caffe-convertor)
+2. Put the generated caffe\_model\_layer.cpp, caffe\_model\_layer.h into [src/custom/](src/custom/)
+3. Modify [src/custom/test.cpp](src/custom/test.cpp) 
+4. Open Vivado HLS and open project on the top folder, then run simulation. 
+
+
+
